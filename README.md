@@ -9,6 +9,7 @@ A simple to do list api to practice creating a .NET Web API.
 1. Install Docker
 2. Create a Docker account.
 3. Run the following command to start a Postgres container.
+
 ```bash
 docker run --name tasktamer -p 5432:5432 -e POSTGRES_PASSWORD=task123 -e POSTGRES_USER=tamer -e POSTGRES_DB=task_tamer -d postgres
 ```
@@ -62,7 +63,6 @@ dotnet add package <package-name> --version <new-version>
 
 # To remove a package
 dotnet remove package <package-name>
-
 ```
 
 # Run Migrations
@@ -85,3 +85,15 @@ Replace <Nameofthemigration> with a name you'd like to give your migration. Don'
 # Helpful Resources
 
 * [Postgres Setup with .NET Entity Framework](https://www.youtube.com/watch?v=z7G6HV7WWz0)
+* [.NET API Guide](https://www.youtube.com/playlist?list=PL82C6-O4XrHdiS10BLh23x71ve9mQCln0)
+
+# Tutorial Guide
+
+To create a .NET Web API, you need to have the .NET Core SDK installed on your machine.
+
+You can run the following command to bootstrap a new .NET Web API project.
+```bash
+dotnet new webapi -n TaskTamer
+```
+Swagger is a great tool to document your API and will come pre-installed with the project. To access the Swagger UI, run the project and go to `/swagger/index.html` page when you start your API.
+
