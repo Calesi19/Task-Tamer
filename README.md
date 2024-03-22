@@ -1,5 +1,6 @@
 # Task Tamer
 
+A simple to do list api to practice creating a .NET Web API.
 
 # How to run the project
 
@@ -45,7 +46,34 @@ docker run -p 8080:8080 -p 8081:8081 tasktamer
 
 # Packages
 
-* 
+* Microsoft.EntityFrameworkCore
+* Npgsql.EntityFrameworkCore.PostgreSQL
+
+# Managing Packages
+
+You can install/remove a package by running the following commands:
+```bash
+# To install a package
+dotnet add package <package-name>
+
+# To update a package
+dotnet add package <package-name> --version <new-version>
+
+# To remove a package
+dotnet remove package <package-name>
+
+```
+
+# Run Migrations
+
+Once a model has been created and added to the DataAccess class, run the following migration commands on the terminal to create the tables in the database.
+
+```bash
+dotnet ef migrations add <Nameofthemigration>
+dotnet ef database update
+```
+Replace <Nameofthemigration> with a name you'd like to give your migration. Don't use spaces.
+
 
 # Helpful Resources
 
