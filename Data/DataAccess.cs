@@ -1,9 +1,8 @@
-﻿using FaveFinder.Data.Models;
-using FaveFinder.Data.Models;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace FaveFinder.Data;
+namespace TaskTamer.Data;
 
 public class AppDBContext : DbContext
 {
@@ -19,6 +18,4 @@ public class AppDBContext : DbContext
         options.UseNpgsql(Configuration.GetConnectionString("PostgresDBConnection"));
     }
     
-    public DbSet<User> Users { get; set; }
-    public DbSet<Color> Colors { get; set; }
 }
