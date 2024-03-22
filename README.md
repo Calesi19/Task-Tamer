@@ -1,4 +1,6 @@
-﻿# FaveFinder
+﻿# Task Tamer
+
+A to do list api built with .NET and C#.
 
 # How to run the project
 
@@ -18,7 +20,7 @@ dotnet restore
 dotnet run
 ```
 
-4. Open your browser and go to `http://localhost:5000`
+4. Open your browser and go to `http://localhost:5000/swagger` to see endpoints.
 
 
 
