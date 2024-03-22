@@ -33,7 +33,7 @@
 # Project files to ignore
 *.csproj.user
 *.csproj
-
+*.sln
 
 # Web publish scripts
 *.pubxml
