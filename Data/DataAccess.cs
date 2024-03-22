@@ -17,5 +17,7 @@ public class AppDBContext : DbContext
     {
         options.UseNpgsql(Configuration.GetConnectionString("PostgresDBConnection"));
     }
+
+    public DbSet<Task> Tasks { get; set; }
     
 }
