@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using TaskTamer.Data.Models;
 
 namespace TaskTamer.Data;
 
@@ -18,6 +19,7 @@ public class AppDBContext : DbContext
         options.UseNpgsql(Configuration.GetConnectionString("PostgresDBConnection"));
     }
 
-    public DbSet<Task> Tasks { get; set; }
+   // Add DbSet for Task
+    public DbSet<TaskItem> TaskItems { get; set; }
     
 }

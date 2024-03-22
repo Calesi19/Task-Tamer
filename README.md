@@ -46,8 +46,9 @@ docker run -p 8080:8080 -p 8081:8081 tasktamer
 
 # Packages
 
-* Microsoft.EntityFrameworkCore
 * Npgsql.EntityFrameworkCore.PostgreSQL
+* Microsoft.EntityFrameworkCore
+* Microsoft.EntityFrameworkCore.Design
 
 # Managing Packages
 
@@ -65,6 +66,12 @@ dotnet remove package <package-name>
 ```
 
 # Run Migrations
+
+Make sure to have the dotnet-ef tool installed.
+
+```bash
+dotnet tool install --global dotnet-ef
+```
 
 Once a model has been created and added to the DataAccess class, run the following migration commands on the terminal to create the tables in the database.
 
