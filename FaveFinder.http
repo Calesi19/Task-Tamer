@@ -1,0 +1,6 @@
+@FaveFinder_HostAddress = http://localhost:5137
+
+GET {{FaveFinder_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
