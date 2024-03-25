@@ -1,6 +1,6 @@
 # Task Tamer
 
-A simple to do list api to practice creating a .NET Web API.
+A simple to do list api to practice creating a .NET Web API. This Repo serves a reference guide for creating .NET APIs.
 
 # How to run the project
 
@@ -95,5 +95,17 @@ You can run the following command to bootstrap a new .NET Web API project.
 ```bash
 dotnet new webapi -n TaskTamer
 ```
+
+To create a sln file, run the following command:
+```bash
+dotnet new sln -n something
+```
+To add a project to the solution, run the following command:
+```bash
+dotnet sln something.sln add something/something.csproj
+```
+
+
+# Testing
 Swagger is a great tool to document your API and will come pre-installed with the project. To access the Swagger UI, run the project and go to `/swagger/index.html` page when you start your API.
 
