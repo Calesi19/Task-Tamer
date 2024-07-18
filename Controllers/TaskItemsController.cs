@@ -23,6 +23,20 @@ namespace TaskTamer.Controllers
             return await _context.TaskItems.ToListAsync();
         }
 
+        // GET: api/TaskItems/health
+        [HttpGet("health")]
+        public async Task<String> HealthCheck()
+        {
+            return "Healthy";
+        }
+
+        // GET: api/TaskItems
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<TaskItem>>> GetTaskItems()
+        {
+            return await _context.TaskItems.ToListAsync();
+        }
+
         // GET: api/TaskItems/5
         [HttpGet("{id}")]
         public async Task<ActionResult<TaskItem>> GetTaskItem(int id)
