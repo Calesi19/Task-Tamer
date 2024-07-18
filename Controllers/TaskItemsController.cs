@@ -5,7 +5,7 @@ using TaskTamer.Data;
 
 namespace TaskTamer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
     public class TaskItemsController : ControllerBase
     {
